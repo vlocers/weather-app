@@ -1,42 +1,60 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.weather-container {
+    background: #f0f8ff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
-  to {
-    transform: rotate(360deg);
+  
+  .weather-header {
+    text-align: center;
+    margin-bottom: 20px;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  
+  .weather-header h2 {
+    margin: 0;
+    color: #333;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+  
+  .weather-header p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .weather-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .weather-details {
+    text-align: center;
+  }
+  
+  .weather-details p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .temperature {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff5722;
+  }
+  
+  .condition, .humidity, .wind, .feelslike {
+    font-size: 18px;
+    color: #333;
+  }
+  
