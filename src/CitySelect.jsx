@@ -5,7 +5,7 @@ const CitySelect = ({ onCityChange }) => {
   
   const [selectedCity, setSelectedCity] = useState('');
   useEffect(() => {
-    onCityChange(selectedCity);  // Şehir seçimi değiştiğinde üst bileşene bildirin
+    onCityChange(selectedCity); 
   }, [selectedCity]);
 
  
